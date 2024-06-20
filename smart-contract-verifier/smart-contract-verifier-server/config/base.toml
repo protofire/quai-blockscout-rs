@@ -11,11 +11,11 @@ addr = "0.0.0.0:8051"
 [solidity]
 enabled = true
 compilers_dir = "/tmp/solidity-compilers"
-refresh_versions_schedule = "0 0 * * * * *"
+refresh_versions_schedule = "0 0 0 0 * * *"
 
 [solidity.fetcher.list]
 # It depends on the OS you are running the service on
-list_url = "https://solc-bin.ethereum.org/linux-amd64/list.json"
+list_url = "https://raw.githubusercontent.com/protofire/quai-solc-bin/gh-pages/linux-amd64/list.json"
 # list_url = "https://solc-bin.ethereum.org/macosx-amd64/list.json"
 # list_url = "https://solc-bin.ethereum.org/windows-amd64/list.json"
 
@@ -28,7 +28,7 @@ list_url = "https://solc-bin.ethereum.org/linux-amd64/list.json"
 #bucket = "bucket"
 
 [vyper]
-enabled = true
+enabled = false
 compilers_dir = "/tmp/vyper-compilers"
 refresh_versions_schedule = "0 0 * * * * *"
 
