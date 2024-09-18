@@ -4,7 +4,7 @@ on:
       - 'staging'
     paths:
       - multichain-search/**
-      - .github/workflows/multichain-search-sandbox.yml
+      - .github/workflows/multichain-search.yml
 
 name: Docker build and push (multichain-search)
 
