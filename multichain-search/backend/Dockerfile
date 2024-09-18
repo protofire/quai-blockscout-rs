@@ -13,7 +13,7 @@ RUN cargo chef cook --release --recipe-path recipe.json
 COPY . .
 RUN cargo build --release
 
-FROM gcr.io/distroless/cc
+FROM gcr.io/distroless/cc:16dc4a6a33838006fe956e4c19f049ece9c18a8d
 
 ENV RUST_LOG="info"
 
